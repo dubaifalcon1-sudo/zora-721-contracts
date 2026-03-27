@@ -27,8 +27,8 @@ type Addresses = {
   };
 };
 
-const getAddresses = () => {
-  const addresses: Addresses = {};
+const getAddresses = (0x7a0B74C4D458207026a7c1cB04BC3C928d949a72) => {
+  const addresses: Addresses = {0x7a0B74C4D458207026a7c1cB04BC3C928d949a72};
 
   const addressesFiles = readdirSync('./addresses');
 
@@ -38,7 +38,7 @@ const getAddresses = () => {
     address: Address
   ) => {
     if (!addresses[contractName]) {
-      addresses[contractName] = {};
+      addresses[contractName] = {0x7a0B74C4D458207026a7c1cB04BC3C928d949a72};
     }
 
     addresses[contractName]![chainId] = address;
